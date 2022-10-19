@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="receipt.css">
+    <title>Ereceipt</title>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>My Store</h1>
+            <h4 id="numeration"></h4>
+            <p id="current_date"></p>
+        </header>
+        <div>
+            <fieldset>
+                <legend id="clientLG">Clients:</legend>
+                <div>
+                    <label for="idLB">ID:</label>
+                    <input type="number" id="idin" maxlength="9" name="idin" required>
+                </div>
+                <div>
+                    <label for="nameLB">Name:</label>
+                    <input type="text" id="namein" name="namein" required>
+                </div>
+                <div>
+                    <label for="addressLB">Address:</label>
+                    <input type="text" id="addressin" name="addressin">
+                </div>
+            <br>
+            <label for="welcome" id="welcome" ></label>
+            </fieldset>
+                <div>
+                    <fieldset>
+                        <legend>Products:</legend>
+                        <div>
+                            <label for="codeLB">Code:</label>
+                            <input type="text" id="code" name="code" maxlength="6" required>
+                        </div>
+                        <div>
+                            <label for="qttLB">Quantity:</label>
+                            <input type="number" id="qtt" maxlength="3" name="qtt" required>
+                        </div>
+                        <div>
+                            <label for="unLB">Unity:</label>
+                            <input type="text" id="unity" maxlength="2" name="unity" required>
+                        </div>
+                        <div>
+                            <label for="productLB">Product:</label>
+                            <input type="text" id="product" name="product" required>
+                        </div>
+                        <div>
+                            <label for="priceLB">Price:</label>
+                            <input type="number" id="price" maxlength="2" name="price" required>
+                        </div>
+                        <div>
+                            <label for="subtLB">Subtotal:</label>
+                            <input type="number" id="subt" name="subt" disabled required>
+                        </div>
+                        <br>
+                        <label id="msg_add"></label>
+                        <button class="btn btn-danger" onclick="addProduct()" type="submit" >Add Product</button>
+
+                    </fieldset>
+                </div>
+            <main>
+            <table class="row" id="formDetail">
+                <thead>
+                  <tr>
+                    <th>Code</th>
+                    <th>Qtt</th>
+                    <th>Unt</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+              </table>
+        </main>
+        <div>
+            <article>
+                <div>
+                    <label for="calsubtotal">Subtotal:</label>
+                    <input type="number" id="subtotalIn" name="SubtotalIn"  required>
+                    
+                </div>
+                <div>
+                    <label for="caltaxes">Taxes:</label>
+                    <input type="number" id="taxesIn" name="taxesIn" disabled required>
+                </div>
+                <div>
+                    <label for="calTotal">Total:</label>
+                    <input type="number" id="totalIn" name="totalIn" disabled required>
+                    <label type="text" id="offer" name="offer">
+                </div>
+                <button class="btn btn-danger" type="submit" id="save" onclick="saveRecord()" >save</button>
+            </article>
+        </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <h5>:)</h5>
+    <p>Thanks for visiting us</p>
+</footer>
+    <script src="receipt.js"></script>
+</html>
