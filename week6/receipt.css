@@ -1,0 +1,45 @@
+body{
+    max-width: 350px;
+    background-color: rgb(0, 0, 0);
+}
+header{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color:rgba(0, 255, 255, 0.066);
+    color:azure
+}
+#logo{
+    width: 100px;
+    margin-bottom: -65px;
+    margin-left: -6px;
+}
+#myReceipt{
+    text-align: center;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+#numeration{
+    margin-left: -20px;
+    margin-bottom: -10px;
+}
+#numeration,#current_date{
+font-size: 25px;
+}
+fieldset,main,article{
+    color: azure;
+    text-align: center;
+}
+
+#offer,p{
+    margin-left: 70px;
+    color: bisque;
+    max-width: 180px;
+    text-align: center;
+    font-size: 20px;
+}
+.row{
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}

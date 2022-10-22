@@ -100,7 +100,7 @@ const getTemples = async() => {
 // Step 4: In the function, using the built-in fetch method, call this absolute URL: 'https://byui-cse.github.io/cse121b-course/week05/temples.json'. Create a variable to hold the response from your fetch. You should have the program wait on this line until it finishes.
     api = await fetch('https://byui-cse.github.io/cse121b-course/week05/temples.json');
     const data = await api.json();
-    let tableBody = ``;
+    let tableBody = '';
     data.forEach((temple) => {
       temples =[temple.templeName,temple.location,temple.dedicated,temple.imageUrl]  
       tableBody += `<article>
